@@ -43,7 +43,7 @@
 // server/services/newsService.js
 import axios from 'axios';
 
-const NEWS_API_KEY = process.env.NEWS_API_KEY || '29b4366bf0024c98a3eb688e3063a1be'; // Hardcode for testing
+const NEWS_API_KEY = process.env.NEWS_API_KEY ; // Hardcode for testing
 const NEWS_API_URL = 'https://newsapi.org/v2/everything';
 
 /**

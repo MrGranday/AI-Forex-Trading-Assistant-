@@ -216,8 +216,8 @@ import { getRealTimeData } from '../services/priceService.js';
 const router = express.Router();
 
 // Initialize Gemini AI
-// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'AIzaSyCPlxDOKaedVk-czoNKH_MRT0oU_T_WXZo');
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'AIzaSyAwZ3hHJjT4nOE6x7YE9Cs2lLlNU_2tf7c');
+
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY );
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 // Get latest suggestion

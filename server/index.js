@@ -54,7 +54,7 @@ import suggestionRoutes from './routes/suggestions.js';
 import backtestRoutes from './routes/backtest.js';
 
 // Explicitly specify the .env file path
-dotenv.config({ path: 'D:/projects/importentProjects/AI-Forx/project/.env' });
+dotenv.config({ path: '../.env' });
 
 // Debug environment variables
 console.log('Environment Variables:', {
@@ -78,7 +78,7 @@ app.use('/api/suggestions', suggestionRoutes);
 app.use('/api/backtest', backtestRoutes);
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/gold-trading');
+mongoose.connect(process.env.MONGODB_URI );
 
 mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
